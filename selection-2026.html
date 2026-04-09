@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Fabio Furlotti — Selezione Submission 2026</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0d0d0d; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+header { padding: 20px 20px 14px; border-bottom: 1px solid #222; }
+header h1 { font-size: 16px; font-weight: 300; letter-spacing: .06em; color: #fff; }
+header p { font-size: 10px; color: #555; margin-top: 5px; }
+.tabs { display: flex; border-bottom: 1px solid #222; padding: 0 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tab { padding: 12px 14px; font-size: 11px; cursor: pointer; border-bottom: 2px solid transparent; color: #666; letter-spacing: .06em; text-transform: uppercase; transition: all .2s; white-space: nowrap; -webkit-tap-highlight-color: transparent; }
+.tab.active { color: #fff; }
+.section { display: none; padding: 20px 14px; }
+.section.active { display: block; }
+.juror-box { background: #161616; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px; border-left: 3px solid #444; }
+.juror-box h3 { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: #555; margin-bottom: 5px; }
+.juror-box .name { font-size: 14px; color: #ddd; margin-bottom: 4px; }
+.juror-box .taste { font-size: 12px; color: #999; line-height: 1.6; }
+.juror-box .title-choice { font-size: 11px; margin-top: 7px; color: #555; }
+.juror-box .title-choice span { color: #bbb; font-style: italic; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; }
+.card { background: #161616; border-radius: 8px; overflow: hidden; }
+.card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #111; }
+.card-noimg { width: 100%; aspect-ratio: 1; background: #111; }
+.card-body { padding: 9px 11px; }
+.card-title { font-size: 12px; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-views { font-size: 10px; color: #555; margin-top: 3px; }
+.card-caption { font-size: 10px; color: #888; margin-top: 6px; line-height: 1.55; font-style: italic; }
+.card-why { font-size: 10px; color: #777; margin-top: 6px; line-height: 1.5; border-top: 1px solid #1f1f1f; padding-top: 6px; }
+.card-link { display: inline-block; margin-top: 2px; font-size: 9px; color: #444; text-decoration: none; letter-spacing: .03em; }
+.card-link:hover, .card-link:active { color: #999; }
+.badge { display: inline-block; background: #1a1a1a; border-radius: 20px; padding: 3px 11px; font-size: 10px; color: #555; margin-bottom: 16px; }
+.badge-submitted { background: #0d2b0d; border-radius: 20px; padding: 3px 14px; font-size: 10px; color: #4caf50; margin-bottom: 16px; display: inline-block; border: 1px solid #1e4d1e; }
+.submitted-bar { background: #0a1f0a; border: 1px solid #1e4d1e; border-radius: 8px; padding: 11px 14px; margin-bottom: 18px; font-size: 11px; color: #4caf50; letter-spacing: .03em; line-height: 1.9; }
+.submitted-bar span { color: #2e7d32; display: inline-block; margin-right: 10px; }
+.card.excluded { opacity: 0.32; position: relative; }
+.card.excluded::after { content: "ESCLUSA"; position: absolute; top: 8px; right: 8px; background: #5a1a1a; color: #e57373; font-size: 9px; padding: 2px 7px; border-radius: 3px; letter-spacing: .06em; }
+.sub-info { background: #0d1e30; border: 1px solid #1a3a5c; border-radius: 8px; padding: 12px 14px; margin-bottom: 18px; font-size: 11px; line-height: 1.9; color: #7db8e0; }
+.sub-info.fraction { background: #1a1a0a; border-color: #4a3800; color: #c8a830; }
+.sub-info a { color: inherit; opacity: .85; text-decoration: underline; }
+.sub-info .warn { color: #e8c46a; margin-top: 4px; font-style: italic; }
+.badge-pending { background: #1a1a0a; border: 1px solid #3a2a00; border-radius: 20px; padding: 3px 14px; font-size: 10px; color: #c8a830; margin-bottom: 16px; display: inline-block; }
+.card.proposed { border: 1px dashed #444; }
+.card.proposed::after { content: "PROPOSTA"; position: absolute; top: 8px; right: 8px; background: #1a2a3a; color: #7db8e0; font-size: 9px; padding: 2px 7px; border-radius: 3px; letter-spacing: .06em; }
+@media (min-width: 600px) {
+  header { padding: 28px 36px 18px; }
+  header h1 { font-size: 20px; }
+  .tabs { padding: 0 36px; }
+  .tab { padding: 13px 20px; }
+  .section { padding: 28px 36px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+  .card:hover { transform: scale(1.02); }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>FABIO FURLOTTI &mdash; SELEZIONE SUBMISSION 2026</h1>
+  <p>Claude + ChatGPT &middot; rev. 13 (mobile iOS · viewport · grid responsive · 9 aprile 2026)</p>
+</header>
+<div class="tabs">
+  <div class="tab active" style="border-bottom-color:#4caf50;color:#fff" onclick="showTab('PX3')" id="tab-PX3">PX3 (9) ✓</div>
+  <div class="tab " onclick="showTab('Eyeshot')" id="tab-Eyeshot">Eyeshot (8)</div>
+  <div class="tab " onclick="showTab('Fraction')" id="tab-Fraction">Fraction (15) ✓</div>
+</div>
+
+<div class="section active" id="section-PX3">
+  <div class="juror-box" style="border-color:#4caf50">
+    <h3>Giuria / Editor</h3>
+    <div class="name">Steve McCurry + James Wellford</div>
+    <div class="taste">McCurry: soul in the face, unguarded moments, soft available light, relationship with subject. Wellford: mystery, images that open a conversation rather than close it, not literal.</div>
+    <div class="title-choice">Serie: <span>"Before Words"</span> &nbsp;·&nbsp; Deadline: <span>13 maggio 2026</span></div>
+  </div>
+  <div class="submitted-bar">
+    ✓ INVIATA &nbsp;&nbsp;
+    <span>Entry ID: 1-127205-26</span>
+    <span>Categoria: Portraiture / Personality</span>
+    <span>Immagini: 9/9 (1 cover + 8 project)</span>
+    <span>Fee: €50 pagati</span>
+    <span>Data: 9 aprile 2026</span>
+  </div>
+  <div class="badge-submitted">9 foto inviate · PX3 2026 ✓</div>
+  <div class="grid">
+    
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53891174524" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53891174524_f3a063043f.jpg" alt="Giò Scotti" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Giò Scotti</div>
+    <div class="card-views">Flickr views: 8,053 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53891174524" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A portrait made in available light. The freckles, the gaze, the stillness — nothing directed. From the series "Before Words."</div>
+    <div class="card-why">McCurry: "essential soul" — lentiggini + sguardo B&W diretto</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52719182551" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52719182551_b1008934a3.jpg" alt="Khady Fall" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Khady Fall</div>
+    <div class="card-views">Flickr views: 3,560 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52719182551" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Eyes closed. Presence without exposure. From the series "Before Words."</div>
+    <div class="card-why">Diversity. Occhi chiusi = dignità + mystery assoluto</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52595958553" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52595958553_6ab0a8f2b3_b.jpg" alt="Mishele Nunez" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Mishele Nunez</div>
+    <div class="card-views">Flickr views: 2,160 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52595958553" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Parma, December 2022. A face that holds its ground. The park, the cold, the directness — nothing softened. From the series "Before Words."</div>
+    <div class="card-why">Nja Kwa: presenza immediata, dignità, diversità — ritratto B&W Parco Ducale. McCurry: iconica, diretta, senza mediazioni</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53425736275_3918934f9f.jpg" alt="Milena on the bus" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Milena on the bus</div>
+    <div class="card-views">Flickr views: 5,159 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A window, a city passing. She does not know she is being photographed. From the series "Before Words."</div>
+    <div class="card-why">McCurry: photography as "collaboration" — spazio transitorio</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/48806045811" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/48806045811_db11c55b75.jpg" alt="Sara e Bologna" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Sara e Bologna</div>
+    <div class="card-views">Flickr views: 10,175 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/48806045811" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A city behind her, a silence in front. The portrait does not explain the distance. From the series "Before Words."</div>
+    <div class="card-why">Sara e Bologna — views solidi, location embedded</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/54735400475_9853888ffb.jpg" alt="Maria Chiara Adorni" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Maria Chiara Adorni</div>
+    <div class="card-views">Flickr views: 642 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Late August, Parma. She is not looking at the camera. The night holds her. From the series "Before Words."</div>
+    <div class="card-why">McCurry: unguarded night moment. 33.692 IG likes = engagement reale verificato</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/48650027811" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/48650027811_4eea186d86_b.jpg" alt="Lara Plasmeijer" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Lara Plasmeijer, la ragazza del treno.</div>
+    <div class="card-views">Flickr views: 3,021 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/48650027811" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">She does not know the photograph is being taken. The train moves; she is somewhere else entirely. From the series "Before Words."</div>
+    <div class="card-why">Wellford: figura + situazione + contesto, soggetto nel mondo — Lara ragazza del treno, 2019</div>
+  </div>
+</div>
+
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/51187269092" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/51187269092_c396b37b52.jpg" alt="Miriam Moretti n.4" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Miriam Moretti</div>
+    <div class="card-views">Flickr views: 7,199 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/51187269092" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Bologna, at night. The wall, the light, the face — held together without effort. From the series "Before Words."</div>
+    <div class="card-why">Miriam Moretti n.4 — night portrait held by wall, light, and restraint. Stronger as a single image than as a sequence reference.</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/54357891131" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/54357891131_65ce136eb4_b.jpg" alt="Rebecca Sassano" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Rebecca Sassano</div>
+    <div class="card-views">Flickr views: 1,970 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/54357891131" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A face against a peeling wall. The gaze holds without effort. The photograph does not explain what she is thinking. From the series "Before Words."</div>
+    <div class="card-why">Closing image — volto memorabile, pulizia, tensione trattenuta. Muro scrostato come controtono al set.</div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="section " id="section-Eyeshot">
+  <div class="juror-box" style="border-color:#2980b9">
+    <h3>Giuria / Editor</h3>
+    <div class="name">Marco Savarese (Editor, Eyeshot)</div>
+    <div class="taste">Savarese: 'found' not 'made'. Inevitability + imperfection. Documentary instinct. Urban as emotional landscape. Anti-constructed, anti-theatrical.</div>
+    <div class="title-choice">Serie scelta: <span>"Fragments of Presence"</span> &nbsp;·&nbsp; Deadline: <span>Apertura: Rolling</span></div>
+  </div>
+  <div class="sub-info">
+    <strong>📋 Invio:</strong> <a href="https://airtable.com/app2sgaaC1tPHw8WQ/shrYwj6iZQo4t3pta" target="_blank">Airtable Italy Form</a> · Gratuito · Rolling · Una serie per form<br>
+    <strong>🖼 Formato:</strong> JPG only · min 2500px lato lungo · 300 DPI · max 10MB per file · <strong>3–15 foto per serie</strong><br>
+    <strong>✏️ Campi obbligatori:</strong> Nome/Cognome/Email/Paese · City (Parma) · Year · Upload file · Title · Descrizione serie (min. 150 parole, solo EN) · Copyright Release ✓
+  </div>
+  <div class="badge">8 foto selezionate</div>
+  <div class="grid">
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/31181355482" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/31181355482_1b12732b4b.jpg" alt="Just a kiss" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Just a kiss</div>
+    <div class="card-views">Flickr views: 10,048 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/31181355482" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A found moment. It could not have been constructed. From the series "Fragments of Presence."</div>
+    <div class="card-why">Savarese: momento umano trovato, zero artificio</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/44742390805" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/1930/44742390805_a95219c1e2.jpg" alt="Il barista all'angolo di Via delle Oche" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Il barista all'angolo di Via delle Oche</div>
+    <div class="card-views">Flickr views: 14,338 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/44742390805" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A street corner in Parma. The barista, the light, the geometry — all arrived at once. From the series "Fragments of Presence."</div>
+    <div class="card-why">Savarese: "found, inevitable" — geometria di strada, luce, angolo. Anchor Parma</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/30345107736" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/30345107736_5a19edf8fd.jpg" alt="Walking the dog at night" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Walking the dog at night</div>
+    <div class="card-views">Flickr views: 5,069 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/30345107736" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Night in Parma. A figure, a dog, a cone of light. Solitude without drama. From the series "Fragments of Presence."</div>
+    <div class="card-why">Savarese: solitudine + animale = inatteso. Notte Parma</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53425736275_3918934f9f.jpg" alt="Milena on the bus" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Milena on the bus</div>
+    <div class="card-views">Flickr views: 5,159 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Public transport, private world. The city moves; she does not. From the series "Fragments of Presence."</div>
+    <div class="card-why">Savarese: trasporto, layer sociale, istinto documentario</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52136665237" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52136665237_ae3b6b921f.jpg" alt="Piazzale della Pace n.1" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Piazzale della Pace</div>
+    <div class="card-views">Flickr views: 6,100 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52136665237" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">The city before the people arrive. The square as subject. From the series "Fragments of Presence."</div>
+    <div class="card-why">Savarese: città come soggetto, non ritratto — bilancia la serie</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/32697521410" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/2427/32697521410_c29df9d9f7.jpg" alt="Nebbia sui binari della stazione" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Nebbia sui binari della stazione</div>
+    <div class="card-views">Flickr views: 3,832 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/32697521410" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Fog on the tracks at Parma station. The city disappears into itself. From the series "Fragments of Presence."</div>
+    <div class="card-why">Nebbia sui binari — immagine "inevitabile e imperfetta". Pura atmosfera, zero ritratto</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/54735400475_9853888ffb.jpg" alt="Maria Chiara Adorni" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Maria Chiara Adorni</div>
+    <div class="card-views">Flickr views: 642 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Parma in August. Late. The night makes everything quieter than it is. From the series "Fragments of Presence."</div>
+    <div class="card-why">Ritratto notturno embedded nell'atmosfera — ponte street+ritratto</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52379205013" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52379205013_4c8c28c458.jpg" alt="Bianca Maccari" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Bianca Maccari</div>
+    <div class="card-views">Flickr views: 25,854 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52379205013" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A face in the city. She carries it lightly. From the series "Fragments of Presence."</div>
+    <div class="card-why">25k views reali — B&W forte, mestiere tecnico verificato</div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="section " id="section-Fraction">
+  <div class="juror-box" style="border-color:#27ae60">
+    <h3>Giuria / Editor</h3>
+    <div class="name">Leo Hsu (Editor, Fraction)</div>
+    <div class="taste">Hsu: cohesive body of work, publication readiness, work worth showing. Public/private threshold, psychological openness, and images that remain unresolved without becoming obscure.</div>
+    <div class="title-choice">Serie scelta: <span>"Between Exposure and Distance"</span> &nbsp;·&nbsp; Deadline: <span>Apertura: Rolling</span></div>
+  </div>
+  <div class="sub-info fraction">
+    <strong>📧 Invio:</strong> <a href="mailto:fractionsubmissions@gmail.com">fractionsubmissions@gmail.com</a> · Oggetto: <em>"Portfolio Submission"</em> · Gratuito · Rolling<br>
+    <strong>🔗 Formato:</strong> 12–20 immagini via LINK AL SITO ONLY (no allegati — vengono cancellati automaticamente)<br>
+    <strong>✏️ Richiesti:</strong> Nome · Email · Link sito · Link portfolio Flickr · Project Statement<br>
+    <div class="warn">⚠️ CRITICO: immagini via SITO PROPRIO (fabiofurlottiphoto.com), NON Flickr. Creare pagina dedicata prima dell'invio.</div>
+    <div class="warn">✓ Versione C (9 apr): ChatGPT + Claude visual eval. UNICA MODIFICA: OUT Bianca Maccari → IN F — Sleeping indoor (NYC). Le altre 14 foto restano confermate. Prossima destinazione Track 2: Fresh Eyes / GUP.</div>
+  </div>
+  <div class="badge-pending" style="background:#0d2b0d;border-color:#1e4d1e;color:#4caf50;">15 foto · versione C ✓ (OUT Bianca · IN F-Sleeping indoor)</div>
+  <div class="grid">
+    
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52731500231" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52731500231_5bd371dd95.jpg" alt="Paolo Sorrentino Ai Due Platani" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Paolo Sorrentino Ai Due Platani</div>
+    <div class="card-views">Flickr views: 3,161 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52731500231" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Paolo Sorrentino at a table in Parma. The public face in a private moment. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#1 · Hsu: Sorrentino in momento transitorio — interfaccia pubblico/privato. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53025596766" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53025596766_79c55791b9.jpg" alt="Ruben Östlund - Ritratto al Parco Ducale" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Ruben Östlund - Ritratto al Parco Ducale</div>
+    <div class="card-views">Flickr views: 1,504 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53025596766" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Ruben Östlund in the garden. The filmmaker at rest, unfilmed. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">Hsu: Östlund (Palme d'Or) nel Parco Ducale di Parma — geografia culturale. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53891174524" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53891174524_f3a063043f.jpg" alt="Giò Scotti" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Giò Scotti</div>
+    <div class="card-views">Flickr views: 8,053 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53891174524" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A young woman who does not perform for the camera. The threshold holds. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#2 · Hsu: interiorità, non celebrity, interroga identità senza risolverla. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/51187269092" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/51187269092_c396b37b52.jpg" alt="Miriam Moretti n.4" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Miriam Moretti</div>
+    <div class="card-views">Flickr views: 7,199 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/51187269092" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Night light on a face. The social space contracts around her. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#3 · Miriam n.4 — Hsu: notte, vulnerabilità, spazio sociale — layer antropologico. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/31181355482" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/31181355482_1b12732b4b.jpg" alt="Just a Kiss" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Just a Kiss</div>
+    <div class="card-views">Flickr views: 10,048 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/31181355482" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A found moment. Two lovers on bicycles in the November fog. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#4 · Hsu: soglia pubblico/privato nello spazio urbano — momento trovato, zero costruzione. Verisart ed. 10/50. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/50372676478" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/50372676478_8ed83d226f.jpg" alt="Adriana Donica #2" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Adriana Donica</div>
+    <div class="card-views">Flickr views: 7,782 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/50372676478" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A semi-public interior. The candlelight, the wine, the gaze — all unstable. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">Hsu: spazio ibrido (enoteca) — dove privato e pubblico si confondono. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/52719182551" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/52719182551_b1008934a3.jpg" alt="Khady Fall" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Khady Fall</div>
+    <div class="card-views">Flickr views: 3,560 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/52719182551" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">She closes her eyes. The camera remains open. Who is exposed here? From the series "Between Exposure and Distance."</div>
+    <div class="card-why">Hsu: chi guarda / chi viene guardato. Hsu = impegno esplicito BIPOC. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/55197650243" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/55197650243_daf64c2fc6_z.jpg" alt="LUMA Arles / Frank Gehry staircase" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">LUMA Arles / Frank Gehry</div>
+    <div class="card-views">Flickr views: 11 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/55197650243" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Some lines are not made to be understood. The spiral holds the light. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#6 · Hsu: architettura come soglia psicologica — spazio pubblico/privato, Frank Gehry, LUMA Arles. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/55197650118" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/55197650118_74857c0d69_z.jpg" alt="Ashkan / Nowruz" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Ashkan / Nowruz</div>
+    <div class="card-views">Flickr views: 7 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/55197650118" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">The Persian New Year begins with a hand against the glass. The cage, the noose, the silence. Then, at last, the candles. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#5 · ChatGPT ENTRA: cortocircuito del reale. Gabbia di vetro + esilio + Nowruz. Ashkan Khatibi: drammaturgo iraniano arrestato/torturato, "Lui" Teatri di Vita Bologna. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/48650027811" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/48650027811_4eea186d86_b.jpg" alt="Lara Plasmeijer" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Lara Plasmeijer</div>
+    <div class="card-views">Flickr views: 3,021 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/48650027811" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">On the train, unaware. The distance is inside the frame, not outside it. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#7 · Hsu: spazio transitorio — soggetto inconsapevole sul treno. Distanza/esposizione letterale. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53425736275_3918934f9f.jpg" alt="Milena on the bus" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Milena on the bus</div>
+    <div class="card-views">Flickr views: 5,159 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/53425736275" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Public transport, private world. The city passes; she does not move with it. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#8 · Hsu: soglia pubblico/privato nel trasporto — threshold esatto del titolo. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/48806045811" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/48806045811_db11c55b75.jpg" alt="Sara e Bologna" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Sara e Bologna</div>
+    <div class="card-views">Flickr views: 10,175 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/48806045811" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A city behind her. The portrait does not explain what separates them. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">Hsu: figura e città in tensione non risolta — ritratto urbano. 10k views. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/54735400475_9853888ffb.jpg" alt="Maria Chiara Adorni" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Maria Chiara Adorni</div>
+    <div class="card-views">Flickr views: 642 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/54735400475" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Parma, late at night. She looks elsewhere. The exposure belongs to the photographer alone. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">Hsu: sguardo altrove = distanza attiva. 33k likes IG verificati. ✓ versione C</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/53739773890" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/53739773890_63027e568d_z.jpg" alt="F — Sleeping indoor (NYC)" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">F — Sleeping indoor (NYC)</div>
+    <div class="card-views">New York · &nbsp;<a href="https://www.flickr.com/photos/fabiofurlotti/53739773890" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">Bank of America ATM, New York. A man sleeps beneath the machine. The exposure is total and involuntary. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#9 · IN versione C (ChatGPT + Claude visual eval, 9 apr) — zero performance, esposizione letterale/metaforica. Massima distanza tra soggetto e osservatore. Potenza documentaria unica nella serie.</div>
+  </div>
+</div>
+
+<div class="card">
+  <a href="https://www.flickr.com/photos/fabiofurlotti/47619741081" target="_blank" style="text-decoration:none">
+    <img src="https://live.staticflickr.com/65535/47619741081_8490e56df1.jpg" alt="Roberto Ferrari" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-title">Roberto Ferrari</div>
+    <div class="card-views">Flickr views: 4,808 &nbsp;·&nbsp; <a href="https://www.flickr.com/photos/fabiofurlotti/47619741081" target="_blank" class="card-link">↗ Flickr</a></div>
+    <div class="card-caption">A photographer being photographed. The act turns on itself. From the series "Between Exposure and Distance."</div>
+    <div class="card-why">#10 finale · meta: fotografo che fotografa un artista. ✓ versione C</div>
+  </div>
+</div>
+  </div>
+</div>
+<script>
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  const colors = {PX3:'#c0392b', Eyeshot:'#2980b9', Fraction:'#27ae60'};
+  document.getElementById('section-' + name).classList.add('active');
+  const tab = document.getElementById('tab-' + name);
+  tab.classList.add('active');
+  tab.style.borderBottomColor = colors[name] || '#fff';
+  tab.style.color = '#fff';
+  document.querySelectorAll('.tab:not(.active)').forEach(t => { t.style.borderBottomColor='transparent'; t.style.color='#666'; });
+}
+</script>
+</body>
+</html>
