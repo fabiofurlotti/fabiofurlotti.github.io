@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /selection-2026.html
 Sitemap: https://fabiofurlotti.github.io/sitemap.xml
